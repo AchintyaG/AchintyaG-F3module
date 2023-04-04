@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 10px;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+h2{
+    margin: 10px auto;
+}
+#heading{
+    background-color: black;
+    color:white ;
+    padding: 8px;
+    text-align: left;
+}
+
+#search-container {
+    display: flex;   
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    color: white; 
+    padding: 5px;
+}
+
+#current-image-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image {
+    width: 100%;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    font-weight: 700;
+    font-size: large;
+}
+
+input{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    #main-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: 2px solid gainsboro;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #main-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: 2px solid gainsboro;
+        border-radius: 5px;
+        padding: 15px;
+    }
+}
